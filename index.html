@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cindy's Activity Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #222; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
+        h1 { text-align: center; margin-bottom: 32px; }
+        .activity { margin-bottom: 40px; }
+        .activity-title { font-size: 1.3em; font-weight: bold; margin-bottom: 6px; }
+        .activity-period { color: #666; font-size: 1em; margin-bottom: 10px; }
+        .activity-desc { margin-bottom: 14px; }
+        .media-list { display: flex; flex-wrap: wrap; gap: 12px; }
+        .media-thumb { cursor: pointer; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); transition: transform 0.2s; max-width: 160px; max-height: 120px; object-fit: cover; }
+        .media-thumb:hover { transform: scale(1.04); }
+        .awards { background: #f1f3f6; padding: 18px; border-radius: 6px; margin-top: 32px; }
+        .awards-title { font-weight: bold; margin-bottom: 10px; }
+        /* Modal styles */
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; }
+        .modal-content { position: relative; max-width: 90vw; max-height: 90vh; }
+        .modal-media { border-radius: 8px; box-shadow: 0 2px 16px rgba(0,0,0,0.18); max-width: 90vw; max-height: 90vh; }
+        .close-modal { position: absolute; top: 10px; right: 18px; font-size: 2em; color: #fff; cursor: pointer; background: none; border: none; }
+        @media (max-width: 600px) {
+            .container { padding: 8px; }
+            .media-list { gap: 6px; }
+            .media-thumb { max-width: 100px; max-height: 80px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cindy's Activity Portfolio</h1>
+
+        <!-- Activity One -->
+        <div class="activity">
+            <div class="activity-title">Menlo Manor English Classes for Seniors - Founder and Lead Teacher</div>
+            <div class="activity-period">(2023-2025)</div>
+            <div class="activity-desc">
+                Organize and lead educational sessions for elderly Chinese immigrants, designing activities to support language learning and community engagement.<br>
+                Teach conversational English and practical phrases to help participants navigate everyday interactions, such as grocery shopping, doctor visits, and public transportation.<br>
+                Provide one-on-one assistance to improve communication skills, empowering seniors to handle basic daily tasks more independently and confidently in English.
+            </div>
+            <div class="media-list">
+                <img src="assets/TeachInSeniorCenter-1.jpg" alt="TeachInSeniorCenter-1" class="media-thumb" data-type="img">
+                <img src="assets/TeachInSeniorCenter-2.jpg" alt="TeachInSeniorCenter-2" class="media-thumb" data-type="img">
+                <img src="assets/TeachInSeniorCenter-3.jpg" alt="TeachInSeniorCenter-3" class="media-thumb" data-type="img">
+                <video src="assets/TeachInSeniorCenter-2.MOV" class="media-thumb" data-type="video" controls muted></video>
+            </div>
+        </div>
+
+        <!-- Activity Two -->
+        <div class="activity">
+            <div class="activity-title">Diamond Challenge Business Competition - Ambassador and Team Leader</div>
+            <div class="activity-period">(2024-2025)</div>
+            <div class="activity-desc">
+                Led a team of two to compete in the Diamond Challenge Business Competition at the University of Delaware, applying entrepreneurial skills to a global contest.<br>
+                Created a business model for a social media platform app aimed at connecting communities and improving communication within towns and cities.<br>
+                Coded a prototype of the app, tested operations, and created an engaging pitch video for contest submission.<br>
+                Attended the 2025 Limitless World Summit as an ambassador and was honored with the Emerging Innovator Top 100 Award for this project.
+            </div>
+            <div class="media-list">
+                <img src="assets/cindy-summit.jpg" alt="cindy-summit" class="media-thumb" data-type="img">
+                <img src="assets/cindy-summit2.jpg" alt="cindy-summit2" class="media-thumb" data-type="img">
+                <img src="assets/cindy-summit3.jpg" alt="cindy-summit3" class="media-thumb" data-type="img">
+                <img src="assets/cindy-summit4.jpg" alt="cindy-summit4" class="media-thumb" data-type="img">
+                <img src="assets/CindyAtLimitlessSummit2025.png" alt="CindyAtLimitlessSummit2025" class="media-thumb" data-type="img">
+                <img src="assets/LimitlessWorlsSummitCover.jpg" alt="LimitlessWorlsSummitCover" class="media-thumb" data-type="img">
+                <img src="assets/LimitlessWorldAmbassadorsList.jpg" alt="LimitlessWorldAmbassadorsList" class="media-thumb" data-type="img">
+                <img src="assets/LimitlessEIA1Top00.jpg" alt="LimitlessEIA1Top00" class="media-thumb" data-type="img">
+            </div>
+        </div>
+
+        <!-- Activity Three -->
+        <div class="activity">
+            <div class="activity-title">Bressaw's Middlesex Shukokai Karate - Brown Belt and Assistant Teacher</div>
+            <div class="activity-period">(2016-2025)</div>
+            <div class="activity-desc">
+                Train in karate 2–3 times per week since age 7, building strong discipline and commitment, currently working toward Black Belt.<br>
+                Achieved brown belt status through mastering advanced techniques and skills.<br>
+                Won 1st place in Kumite at Shukokai Karate tournaments, demonstrating high-level martial ability.<br>
+                Assist in weekend classes by sparring with students, offering feedback, and reinforcing dojo etiquette and safety.<br>
+                Improve overall fitness, endurance, and mindset, enhancing both physical health and self‑defense knowledge.
+            </div>
+            <div class="media-list">
+                <img src="assets/Karate2025Tournament.jpg" alt="Karate2025Tournament" class="media-thumb" data-type="img">
+                <video src="assets/Karate2025Spar.MOV" class="media-thumb" data-type="video" controls muted></video>
+            </div>
+        </div>
+
+        <!-- Activity Four -->
+        <div class="activity">
+            <div class="activity-title">Congressional App Challenge 2024 - Lead Coder</div>
+            <div class="activity-period">(2023-2024)</div>
+            <div class="activity-desc">
+                Developed an app to mimic the community bulletin board at the Edison Public Library to enhance local communication.<br>
+                Coded app utilizing Java to create a functional product accessible to community members from any device.<br>
+                Submitted project to the Congressional App Challenge hosted by the U.S. House of Representatives.
+            </div>
+            <div class="media-list">
+                <video src="assets/cindy-neighborhood.mp4" class="media-thumb" data-type="video" controls muted></video>
+            </div>
+        </div>
+
+        <!-- Activity Five -->
+        <div class="activity">
+            <div class="activity-title">John P. Stevens Track and Field Team - Team Member</div>
+            <div class="activity-period">(2023-2025)</div>
+            <div class="activity-desc">
+                Compete in short-distance track events, including 100 and 200-meter sprints.<br>
+                Represent the school in multiple track meets, gaining experience in competitive sprinting environments.<br>
+                Improve speed and endurance through consistent daily practice.<br>
+                Cultivate a strong mindset to overcome challenges and maintain focus.
+            </div>
+            <div class="media-list">
+                <img src="assets/cindy-tracker.jpg" alt="cindy-tracker" class="media-thumb" data-type="img">
+                <img src="assets/CindyGraduationPhotoes-1.jpg" alt="CindyGraduationPhotoes-1" class="media-thumb" data-type="img">
+            </div>
+        </div>
+
+        <!-- Awards & Accomplishments -->
+        <div class="awards">
+            <div class="awards-title">AWARDS & ACCOMPLISHMENTS</div>
+            <ul>
+                <li>National Merit Semifinalist, 2026</li>
+                <li>National Honor Society, Grade 10</li>
+                <li>National English Honor Society, Grade 11</li>
+                <li>Top 100 Innovator and 2025 Limitless World Summit Ambassador - Diamond Challenge, University of Delaware Horn Entrepreneurship Competition, Grade 11</li>
+                <li>1st Place in Kumite in both the 2024 and 2025 Karate Tournaments, Grades 10 - 11</li>
+                <li>AP Scholar with Distinction, Grades 10 and 11</li>
+                <li>2025 National Recognition Program, Grade 11</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal for enlarged media -->
+    <div class="modal" id="mediaModal">
+        <button class="close-modal" id="closeModal">&times;</button>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script>
+        // Modal logic
+        const modal = document.getElementById('mediaModal');
+        const modalContent = document.getElementById('modalContent');
+        const closeModalBtn = document.getElementById('closeModal');
+
+        function enlargeMedia(e) {
+            const target = e.target;
+            if (!target.classList.contains('media-thumb')) return;
+            modal.style.display = 'flex';
+            modalContent.innerHTML = '';
+            if (target.dataset.type === 'img') {
+                const img = document.createElement('img');
+                img.src = target.src;
+                img.alt = target.alt;
+                img.className = 'modal-media';
+                modalContent.appendChild(img);
+            } else if (target.dataset.type === 'video') {
+                const video = document.createElement('video');
+                video.src = target.src;
+                video.className = 'modal-media';
+                video.controls = true;
+                video.autoplay = true;
+                modalContent.appendChild(video);
+            }
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            modalContent.innerHTML = '';
+        }
+
+        document.querySelectorAll('.media-thumb').forEach(el => {
+            el.addEventListener('click', enlargeMedia);
+        });
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal();
+        });
+        // Allow closing modal with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>
