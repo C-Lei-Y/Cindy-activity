@@ -43,6 +43,11 @@ Represent the school in multiple track meets, gaining experience in competitive 
 Improve speed and endurance through consistent daily practice
 Cultivate a strong mindset to overcome challenges and maintain focus 
 
+6.Activity Six
+Fiber Arts Club - Club Member (2024-2026) 
+Contribute to club-led fundraising and donation initiatives, including crocheting carrot-shaped baskets for distribution to local veterans' homes during Easter
+Provide instruction and mentorship to beginner crocheters, fostering a welcoming environment and helping new members build foundational skills
+
 
 AWARDS & ACCOMPLISHMENTS
 National Merit Semifinalist, 2026
@@ -56,10 +61,11 @@ AP Scholar with Distinction, Grades 10 and 11
 
 requirements: show web page, each activity conatin activity title, time period and description and link image or video from assets folder, click image, it can enlarge, click again, it return back previous size
 
-activity one use TeachInSeniorCenter-1.jpg, TeachInSeniorCenter-2.jpg, TeachInSeniorCenter-3.jpg, TeachInSeniorCenter-2.MOV
+activity one use TeachInSeniorCenter-1.jpg, TeachInSeniorCenter-2.jpg, TeachInSeniorCenter-3.jpg, TeachInSeniorCenter-2.mp4
 active two use cindy-summit.jpg, cindy-summit2.jpg, cindy-summit3,jpg, cindy-summit4.jpg, CindyAtLimitlessSummit2025.png, LimitlessWorlsSummitCover.jpg, LimitlessWorldAmbassadorsList.jpg, LimitlessEIA1Top00.jpg
-activity three use Karate2025Tournament.jpg, Karate2025Spar.MOV
+activity three use Karate2025Tournament.jpg, Karate2025Spar.mp4
 activity four use cindy-neighborhood.mp4
-activity five use cindy-tracker.jpg, CindyGraduationPhotoes-1.jpg
+activity five use cindy-tracker.JPG, CindyGraduationPhotoes-1.JPG
+activity six use CrochetArtifacts-1.jpg, CrochetArtifacts-2.jpg
 
 

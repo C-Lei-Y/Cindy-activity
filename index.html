@@ -5,26 +5,25 @@
     <title>Cindy's Activity Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #222; }
-        .container { max-width: 900px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
+        body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 40px auto; background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
         h1 { text-align: center; margin-bottom: 32px; }
-        .activity { margin-bottom: 40px; }
-        .activity-title { font-size: 1.3em; font-weight: bold; margin-bottom: 6px; }
-        .activity-period { color: #666; font-size: 1em; margin-bottom: 10px; }
-        .activity-desc { margin-bottom: 14px; }
-        .media-list { display: flex; flex-wrap: wrap; gap: 12px; }
+        .activity { margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 32px; }
+        .activity:last-child { border-bottom: none; }
+        .activity-title { font-size: 1.3em; font-weight: bold; margin-bottom: 8px; }
+        .activity-period { color: #666; font-size: 1em; margin-bottom: 12px; }
+        .activity-desc { margin-bottom: 16px; }
+        .media-gallery { display: flex; flex-wrap: wrap; gap: 12px; }
         .media-thumb { cursor: pointer; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); transition: transform 0.2s; max-width: 160px; max-height: 120px; object-fit: cover; }
-        .media-thumb:hover { transform: scale(1.04); }
-        .awards { background: #f1f3f6; padding: 18px; border-radius: 6px; margin-top: 32px; }
+        .media-thumb:hover { transform: scale(1.05); }
+        .awards { background: #f1f3f6; padding: 18px 24px; border-radius: 8px; margin-top: 32px; }
         .awards-title { font-weight: bold; margin-bottom: 10px; }
         /* Modal styles */
-        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; }
-        .modal-content { position: relative; max-width: 90vw; max-height: 90vh; }
-        .modal-media { border-radius: 8px; box-shadow: 0 2px 16px rgba(0,0,0,0.18); max-width: 90vw; max-height: 90vh; }
-        .close-modal { position: absolute; top: 10px; right: 18px; font-size: 2em; color: #fff; cursor: pointer; background: none; border: none; }
+        .modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; }
+        .modal-content { max-width: 90vw; max-height: 90vh; border-radius: 10px; box-shadow: 0 2px 16px rgba(0,0,0,0.2); background: #fff; padding: 12px; }
+        .modal-img, .modal-video { max-width: 80vw; max-height: 80vh; border-radius: 8px; }
         @media (max-width: 600px) {
-            .container { padding: 8px; }
-            .media-list { gap: 6px; }
+            .container { padding: 12px; }
             .media-thumb { max-width: 100px; max-height: 80px; }
         }
     </style>
@@ -33,7 +32,7 @@
     <div class="container">
         <h1>Cindy's Activity Portfolio</h1>
 
-        <!-- Activity One -->
+        <!-- Activity 1 -->
         <div class="activity">
             <div class="activity-title">Menlo Manor English Classes for Seniors - Founder and Lead Teacher</div>
             <div class="activity-period">(2023-2025)</div>
@@ -42,15 +41,15 @@
                 Teach conversational English and practical phrases to help participants navigate everyday interactions, such as grocery shopping, doctor visits, and public transportation.<br>
                 Provide one-on-one assistance to improve communication skills, empowering seniors to handle basic daily tasks more independently and confidently in English.
             </div>
-            <div class="media-list">
-                <img src="assets/TeachInSeniorCenter-1.jpg" alt="TeachInSeniorCenter-1" class="media-thumb" data-type="img">
-                <img src="assets/TeachInSeniorCenter-2.jpg" alt="TeachInSeniorCenter-2" class="media-thumb" data-type="img">
-                <img src="assets/TeachInSeniorCenter-3.jpg" alt="TeachInSeniorCenter-3" class="media-thumb" data-type="img">
-                <video src="assets/TeachInSeniorCenter-2.mp4" class="media-thumb" data-type="video" controls muted></video>
+            <div class="media-gallery">
+                <img src="assets/TeachInSeniorCenter-1.jpg" class="media-thumb" alt="TeachInSeniorCenter-1">
+                <img src="assets/TeachInSeniorCenter-2.jpg" class="media-thumb" alt="TeachInSeniorCenter-2">
+                <img src="assets/TeachInSeniorCenter-3.jpg" class="media-thumb" alt="TeachInSeniorCenter-3">
+                <video src="assets/TeachInSeniorCenter-2.mp4" class="media-thumb" controls muted></video>
             </div>
         </div>
 
-        <!-- Activity Two -->
+        <!-- Activity 2 -->
         <div class="activity">
             <div class="activity-title">Diamond Challenge Business Competition - Ambassador and Team Leader</div>
             <div class="activity-period">(2024-2025)</div>
@@ -60,19 +59,19 @@
                 Coded a prototype of the app, tested operations, and created an engaging pitch video for contest submission.<br>
                 Attended the 2025 Limitless World Summit as an ambassador and was honored with the Emerging Innovator Top 100 Award for this project.
             </div>
-            <div class="media-list">
-                <img src="assets/cindy-summit.jpg" alt="cindy-summit" class="media-thumb" data-type="img">
-                <img src="assets/cindy-summit2.jpg" alt="cindy-summit2" class="media-thumb" data-type="img">
-                <img src="assets/cindy-summit3.jpg" alt="cindy-summit3" class="media-thumb" data-type="img">
-                <img src="assets/cindy-summit4.jpg" alt="cindy-summit4" class="media-thumb" data-type="img">
-                <img src="assets/CindyAtLimitlessSummit2025.png" alt="CindyAtLimitlessSummit2025" class="media-thumb" data-type="img">
-                <img src="assets/LimitlessWorlsSummitCover.jpg" alt="LimitlessWorlsSummitCover" class="media-thumb" data-type="img">
-                <img src="assets/LimitlessWorldAmbassadorsList.jpg" alt="LimitlessWorldAmbassadorsList" class="media-thumb" data-type="img">
-                <img src="assets/LimitlessEIA1Top00.jpg" alt="LimitlessEIA1Top00" class="media-thumb" data-type="img">
+            <div class="media-gallery">
+                <img src="assets/cindy-summit.jpg" class="media-thumb" alt="cindy-summit">
+                <img src="assets/cindy-summit2.jpg" class="media-thumb" alt="cindy-summit2">
+                <img src="assets/cindy-summit3.jpg" class="media-thumb" alt="cindy-summit3">
+                <img src="assets/cindy-summit4.jpg" class="media-thumb" alt="cindy-summit4">
+                <img src="assets/CindyAtLimitlessSummit2025.png" class="media-thumb" alt="CindyAtLimitlessSummit2025">
+                <img src="assets/LimitlessWorlsSummitCover.jpg" class="media-thumb" alt="LimitlessWorlsSummitCover">
+                <img src="assets/LimitlessWorldAmbassadorsList.jpg" class="media-thumb" alt="LimitlessWorldAmbassadorsList">
+                <img src="assets/LimitlessEIA1Top00.jpg" class="media-thumb" alt="LimitlessEIA1Top00">
             </div>
         </div>
 
-        <!-- Activity Three -->
+        <!-- Activity 3 -->
         <div class="activity">
             <div class="activity-title">Bressaw's Middlesex Shukokai Karate - Brown Belt and Assistant Teacher</div>
             <div class="activity-period">(2016-2025)</div>
@@ -83,13 +82,13 @@
                 Assist in weekend classes by sparring with students, offering feedback, and reinforcing dojo etiquette and safety.<br>
                 Improve overall fitness, endurance, and mindset, enhancing both physical health and self‑defense knowledge.
             </div>
-            <div class="media-list">
-                <img src="assets/Karate2025Tournament.jpg" alt="Karate2025Tournament" class="media-thumb" data-type="img">
-                <video src="assets/Karate2025Spar.mp4" class="media-thumb" data-type="video" controls muted></video>
+            <div class="media-gallery">
+                <img src="assets/Karate2025Tournament.jpg" class="media-thumb" alt="Karate2025Tournament">
+                <video src="assets/Karate2025Spar.mp4" class="media-thumb" controls muted></video>
             </div>
         </div>
 
-        <!-- Activity Four -->
+        <!-- Activity 4 -->
         <div class="activity">
             <div class="activity-title">Congressional App Challenge 2024 - Lead Coder</div>
             <div class="activity-period">(2023-2024)</div>
@@ -98,12 +97,12 @@
                 Coded app utilizing Java to create a functional product accessible to community members from any device.<br>
                 Submitted project to the Congressional App Challenge hosted by the U.S. House of Representatives.
             </div>
-            <div class="media-list">
-                <video src="assets/cindy-neighborhood.mp4" class="media-thumb" data-type="video" controls muted></video>
+            <div class="media-gallery">
+                <video src="assets/cindy-neighborhood.mp4" class="media-thumb" controls muted></video>
             </div>
         </div>
 
-        <!-- Activity Five -->
+        <!-- Activity 5 -->
         <div class="activity">
             <div class="activity-title">John P. Stevens Track and Field Team - Team Member</div>
             <div class="activity-period">(2023-2025)</div>
@@ -113,9 +112,23 @@
                 Improve speed and endurance through consistent daily practice.<br>
                 Cultivate a strong mindset to overcome challenges and maintain focus.
             </div>
-            <div class="media-list">
-                <img src="assets/cindy-tracker.JPG" alt="cindy-tracker" class="media-thumb" data-type="img">
-                <img src="assets/CindyGraduationPhotoes-1.JPG" alt="CindyGraduationPhotoes-1" class="media-thumb" data-type="img">
+            <div class="media-gallery">
+                <img src="assets/cindy-tracker.JPG" class="media-thumb" alt="cindy-tracker">
+                <img src="assets/CindyGraduationPhotoes-1.JPG" class="media-thumb" alt="CindyGraduationPhotoes-1">
+            </div>
+        </div>
+
+        <!-- Activity 6 -->
+        <div class="activity">
+            <div class="activity-title">Fiber Arts Club - Club Member</div>
+            <div class="activity-period">(2024-2026)</div>
+            <div class="activity-desc">
+                Contribute to club-led fundraising and donation initiatives, including crocheting carrot-shaped baskets for distribution to local veterans' homes during Easter.<br>
+                Provide instruction and mentorship to beginner crocheters, fostering a welcoming environment and helping new members build foundational skills.
+            </div>
+            <div class="media-gallery">
+                <img src="assets/CrochetArtifacts-1.jpg" class="media-thumb" alt="CrochetArtifacts-1">
+                <img src="assets/CrochetArtifacts-2.jpg" class="media-thumb" alt="CrochetArtifacts-2">
             </div>
         </div>
 
@@ -135,53 +148,49 @@
     </div>
 
     <!-- Modal for enlarged media -->
-    <div class="modal" id="mediaModal">
-        <button class="close-modal" id="closeModal">&times;</button>
-        <div class="modal-content" id="modalContent"></div>
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content"></div>
     </div>
 
     <script>
-        // Modal logic
-        const modal = document.getElementById('mediaModal');
-        const modalContent = document.getElementById('modalContent');
-        const closeModalBtn = document.getElementById('closeModal');
+        // Modal logic for image/video enlarge
+        const modal = document.getElementById('modal');
+        const modalContent = document.getElementById('modal-content');
 
-        function enlargeMedia(e) {
-            const target = e.target;
-            if (!target.classList.contains('media-thumb')) return;
-            modal.style.display = 'flex';
+        function showModalMedia(src, type) {
             modalContent.innerHTML = '';
-            if (target.dataset.type === 'img') {
+            if (type === 'img') {
                 const img = document.createElement('img');
-                img.src = target.src;
-                img.alt = target.alt;
-                img.className = 'modal-media';
+                img.src = src;
+                img.className = 'modal-img';
                 modalContent.appendChild(img);
-            } else if (target.dataset.type === 'video') {
+            } else if (type === 'video') {
                 const video = document.createElement('video');
-                video.src = target.src;
-                video.className = 'modal-media';
+                video.src = src;
+                video.className = 'modal-video';
                 video.controls = true;
                 video.autoplay = true;
                 modalContent.appendChild(video);
             }
+            modal.style.display = 'flex';
         }
 
-        function closeModal() {
+        // Click handler for thumbnails
+        document.querySelectorAll('.media-thumb').forEach(el => {
+            el.addEventListener('click', function(e) {
+                const src = el.src || el.currentSrc;
+                if (el.tagName.toLowerCase() === 'img') {
+                    showModalMedia(src, 'img');
+                } else if (el.tagName.toLowerCase() === 'video') {
+                    showModalMedia(src, 'video');
+                }
+            });
+        });
+
+        // Close modal on click anywhere
+        modal.addEventListener('click', function() {
             modal.style.display = 'none';
             modalContent.innerHTML = '';
-        }
-
-        document.querySelectorAll('.media-thumb').forEach(el => {
-            el.addEventListener('click', enlargeMedia);
-        });
-        closeModalBtn.addEventListener('click', closeModal);
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) closeModal();
-        });
-        // Allow closing modal with ESC key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeModal();
         });
     </script>
 </body>
